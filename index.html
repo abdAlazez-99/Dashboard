@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <!-- <canvas id="line-chart"></canvas>
+    <canvas id="bar-chart"></canvas>
+    <canvas id="pie-chart"></canvas>
+    <canvas id="doughnut-chart"></canvas> -->
+  <body>
+    <div class="page flex relative">
+      <aside class="bg-secondary p-10">
+        <h2 class="c-primary"><i class="fa fa-user-edit me-2"></i> DarkPan</h2>
+        <figure class="logo m-block-20 flex align-center gap-10 c-light">
+          <img src="img/user.jpg" alt="user" class="rad-half" />
+          <figcaption class="t-cap">
+            <span class="d-block f-blod c-white">john doe</span>
+            <span class="d-block">admin</span>
+          </figcaption>
+        </figure>
+        <ul class="a-nav">
+          <li class="mb-15 c-light active flex align-center">
+            <i
+              class="fa fa-tachometer-alt mr-10 rad-half bg-black flex-center"
+            ></i
+            >Dashboard
+          </li>
+          <li class="mb-15 c-light flex align-center">
+            <i class="fa fa-laptop mr-10 rad-half bg-black flex-center"></i
+            >Elements
+          </li>
+          <li class="mb-15 c-light flex align-center">
+            <i class="fa fa-th mr-10 rad-half bg-black flex-center"></i>Widgets
+          </li>
+          <li class="mb-15 c-light flex align-center">
+            <i class="fa fa-keyboard mr-10 rad-half bg-black flex-center"></i
+            >Forms
+          </li>
+          <li class="mb-15 c-light flex align-center">
+            <i class="fa fa-table mr-10 rad-half bg-black flex-center"></i
+            >Tables
+          </li>
+          <li class="mb-15 c-light flex align-center">
+            <i class="fa fa-chart-bar mr-10 rad-half bg-black flex-center"></i
+            >Charts
+          </li>
+          <li class="mb-15 c-light flex align-center">
+            <i class="far fa-file-alt mr-10 rad-half bg-black flex-center"></i
+            >Pages
+          </li>
+        </ul>
+      </aside>
+      <div class="content grow bg-black">
+        <header class="bg-secondary p-20 flex-bt relative">
+          <form action="#">
+            <input
+              type="search"
+              placeholder="search"
+              class="bg-black rad-6 t-cap p-block-5 p-inline-10"
+            />
+          </form>
+          <ul class="icons flex align-center gap-5 c-light gap-20">
+            <li class="duration pointer flex-center gap-10">
+              <i class="fa fa-envelope bg-black rad-half flex-center"></i>
+              message
+            </li>
+            <li class="duration pointer flex-center gap-10">
+              <i class="fa fa-bell bg-black rad-half flex-center pointer"></i
+              >address
+            </li>
+            <li class="duration pointer flex-center pointer gap-10">
+              <img src="img/user.jpg" alt="user" class="rad-half" />john doe
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

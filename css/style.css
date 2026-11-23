@@ -1,0 +1,127 @@
+@layer resetك;
+@font-face {
+  font-family: "heading-font";
+  src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "main-font";
+  src: url("../fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-display: swap;
+}
+
+:root {
+  --c-primary: #eb1616;
+  --c-primary-hover: #c81313;
+  --c-secondary: #191c24;
+  --c-light: #6c7293;
+  --c-white: #ffffff;
+}
+
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "main-font";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "heading-font";
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    color: inherit;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+/* ===================== */
+aside {
+  min-height: 100vh;
+}
+
+.a-nav li {
+  padding: 5px 65px 5px 5px;
+  i {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+  }
+}
+.active,
+.a-nav li:hover {
+  background-color: #000;
+  color: var(--c-primary);
+  border-left: 3px solid var(--c-primary);
+  border-radius: 0px 20px 20px 0px;
+  i {
+    background-color: var(--c-secondary);
+  }
+}
+
+@media (width < 950px) {
+  aside.p-10 {
+    position: absolute;
+    top: 71px;
+    left: 0;
+    font-size: 14px;
+    li {padding-right: 20px}
+  }
+}
+/* ============ */
+header form input {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  caret-color: var(--c-light);
+}
+
+header .icons {
+  li {
+    transition-property: color;
+    &:hover {
+      color: var(--c-primary);
+    }
+    i {
+      width: 35px;
+      height: 35px;
+      transition-property: color;
+    }
+  }
+}
+
+@media (width < 950px) {
+  header {
+    .icons {
+      display: none;
+    }
+    &::after {
+      content: "\f0c9";
+      font-family: var(--fa-family-classic);
+      font-weight: 900;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 35px;
+      height: 35px;
+      background-color: #000;
+      color: var(--c-primary);
+      border-radius: 50%;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
