@@ -76,9 +76,6 @@ aside {
     top: 71px;
     left: -100%;
     font-size: 14px;
-    li {
-      padding-right: 20px;
-    }
   }
   .open {
     left: 0 !important;
