@@ -13,7 +13,7 @@
     <canvas id="pie-chart"></canvas>
     <canvas id="doughnut-chart"></canvas> -->
   <body>
-    <div class="page flex relative">
+    <div class="page flex relative over-hidden">
       <aside class="bg-secondary p-10 duration">
         <h2 class="c-primary"><i class="fa fa-user-edit me-2"></i> DarkPan</h2>
         <figure class="logo m-block-20 flex align-center gap-10 c-light">
@@ -77,27 +77,29 @@
               <img src="img/user.jpg" alt="user" class="rad-half" />john doe
             </li>
           </ul>
-          <i class="fa fa-bars burger pointer absolute bg-black c-primary rad-half flex-center"></i>
+          <i
+            class="fa fa-bars burger pointer absolute bg-black c-primary rad-half flex-center"
+          ></i>
         </header>
         <main class="p-20">
-          <div class="small-stats grid four-columns gap-20">
+          <section class="small-stats grid four-columns gap-20">
             <article class="bg-secondary p-20 flex-bt rad-6">
               <i class="fa fa-chart-line c-primary fa-3x"></i>
-              <div class="txt">
+              <div class="txt t-center">
                 <span class="d-block c-light mb-5">Today Sale</span>
                 <span class="c-white f-bold">$1234</span>
               </div>
             </article>
             <article class="bg-secondary p-20 flex-bt rad-6">
               <i class="fa fa-chart-bar c-primary fa-3x"></i>
-              <div class="txt">
+              <div class="txt t-center">
                 <span class="d-block c-light mb-5">Total Sale</span>
                 <span class="c-white f-bold">$1234</span>
               </div>
             </article>
             <article class="bg-secondary p-20 flex-bt rad-6">
               <i class="fa fa-chart-area c-primary fa-3x"></i>
-              <div class="txt">
+              <div class="txt t-center">
                 <span class="d-block c-light mb-5">Today Revenue</span>
                 <span class="c-white f-bold">$1234</span>
               </div>
@@ -109,7 +111,23 @@
                 <span class="c-white f-bold">$1234</span>
               </div>
             </article>
-          </div>
+          </section>
+          <section class="charts flex-bt wrap gap-20 mt-20">
+            <article class="bg-secondary p-20 rad-6 grow">
+              <div class="info flex-bt mb-20 t-cap">
+                <h3 class="c-white">Worldwide Sales</h3>
+                <a href="#" class="c-primary duration">show all</a>
+              </div>
+              <img src="img/worldwide-sales.svg.png" alt="worldwide-sales" />
+            </article>
+            <article class="bg-secondary p-20 rad-6 grow">
+              <div class="info flex-bt mb-20 t-cap">
+                <h3 class="c-white t-cap">sales & revenue</h3>
+                <a href="#" class="c-primary duration">show all</a>
+              </div>
+              <img src="img/sales-revenue.svg.png" alt="worldwide-sales" />
+            </article>
+          </section>
         </main>
       </div>
     </div>
