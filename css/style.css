@@ -83,6 +83,10 @@ aside {
     left: 0 !important;
   }
 }
+
+aside + .content {
+  min-width: 0;
+}
 /* ============ */
 header form input {
   font-size: 18px;
@@ -131,5 +135,30 @@ header .burger {
   max-width: 100%;
   img {
     margin-inline: auto;
+  }
+}
+
+.table {
+  overflow-x: auto;
+  table {
+    border-collapse: collapse;
+    white-space: noWrap;
+    tr td,
+    tr th {
+      border: 1px solid #000;
+      padding: 12px 10px;
+    }
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      &:checked {
+        background-image: url(../img/check.svg);
+        background-color: var(--c-primary);
+      }
+    }
   }
 }
